@@ -13,7 +13,7 @@ class Gradebook
     private:
         vector<Student> students;
         vector<Assignment> assignments;
-        vector<vector<int>> grades;
+        vector<vector<int> > grades;
     public:
         int findStudent(const string& studentID);
         void addStudent(const string& firstName, const string& lastName, const string& studentID);

@@ -11,7 +11,10 @@ class Assignment
         string name;
         int totalPoints;
     public:
-        Assignment(const string& name, int totalPointsPossible) : name(name), totalPoints(totalPoints){}
+        Assignment(const string& name, int totalPointsPossible) : name(name)
+        {
+            this->totalPoints = totalPoints;
+        }
         string getName() const
         {
             return name;
